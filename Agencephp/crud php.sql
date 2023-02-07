@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 06 fév. 2023 à 16:49
+-- Généré le : mar. 07 fév. 2023 à 15:50
 -- Version du serveur : 10.4.27-MariaDB
 -- Version de PHP : 8.1.12
 
@@ -45,8 +45,7 @@ CREATE TABLE `annonce` (
 
 INSERT INTO `annonce` (`id`, `titre`, `image`, `description`, `superficie`, `adresse`, `montant`, `date`, `type`) VALUES
 (15, 'doha', 'uploads/T.jpg', 'nouvelle appartement', 70, 'mesnana doha', '1500', '2023-02-04', 'location'),
-(16, 'narjis', 'images/image.jpg', 'nouvelle appartement', 100, 'mesnana narjis', '8000', '2023-02-03', 'vente'),
-(18, 'narjis', 'images/pic11.jpg', 'rghfghghgfhgf', 555, 'rygfhghfghfg', '666', '2023-02-10', 'vente');
+(16, 'narjis', 'images/image.jpg', 'nouvelle appartement', 100, 'mesnana narjis', '8000', '2023-02-03', 'vente');
 
 -- --------------------------------------------------------
 
