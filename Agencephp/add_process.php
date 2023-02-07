@@ -39,7 +39,7 @@
          echo "<h1>erreur</h1>";
      }
 
-    // echo "<script>alert('SUCCESS');window.location.href='index.php'</script>";
+   
 
   }
 ?>

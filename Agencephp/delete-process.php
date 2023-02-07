@@ -1,5 +1,5 @@
 <?php
-    include 'connection.php';
+    require 'connection.php';
 
     $id = $_GET['id'];
 
@@ -8,8 +8,13 @@
         $delete = "DELETE FROM annonce WHERE id = '$id'";
         $delete_qry = mysqli_query($conn, $delete);
     
-        // echo "<script>alert('DELETED');window.location.href='../index.php'</script>";
-        header("Location: index.php");
-    
+      if (isset($delete_qry)) {
+          header("Location: index.php");
+ 
+      }else{
+          echo "<h1>erreur</h1>";
       }
+       
+    
+    }
 ?>

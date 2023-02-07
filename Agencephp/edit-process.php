@@ -1,5 +1,5 @@
 <?php
-    include 'connection.php';
+    require 'connection.php';
 
     $id = $_GET['id'];
 
@@ -32,10 +32,9 @@
         if (isset($update_qry)) {
           header("Location: index.php");
  
-      }else{
-          echo "<h1>erreur</h1>";
-      }
-        // echo "<script>alert('UPDATED');window.location.href='index.php'</script>";
-    
+        }else{
+            echo "<h1>erreur</h1>";
+        }
+      
       }
 ?>
