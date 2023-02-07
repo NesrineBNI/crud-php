@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD Php Procedural - Modal Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
 </head>
 <body>
@@ -66,26 +67,27 @@
             </a>
         </div>
     </slide>
-    <div class="container">
-    <form action="index.php" method="post">
+    <div class="container search">
+        <form action="index.php" method="post">
         <div class="input-group mt-5 container">
-        <label for="exampleFormControlSelect1">Type Annonce :  </label>
-        <select class="form-control" id="exampleFormControlSelect1" name="type">
-            <option value="">Select type Annonce </option>
-            <option value="location"> Location </option>
-            <option value="vente"> Vente </option>
-        </select>
-        <div class="input-group-prepend">
-            <span class="input-group-text">Montant Min and Max</span>
+            <label for="exampleFormControlSelect1">Type Annonce :  </label>
+            <select class="form-control" id="exampleFormControlSelect1" name="type">
+                <option value="">Select type Annonce </option>
+                <option value="location"> Location </option>
+                <option value="vente"> Vente </option>
+            </select>
+            <div class="input-group-prepend">
+                <span class="input-group-text">Montant Min and Max</span>
+            </div>
+            <input type="number" name="min" class="form-control" min="0" required placeholder="Min">
+            <input type="number" name="max" class="form-control" min="0" required placeholder="Max">
+            
+            <button type="submit" name="submit" class="btn btn-success">
+                Search
+            </button>
+        </form>
         </div>
-        <input type="number" name="min" class="form-control" min="0" required placeholder="Min">
-        <input type="number" name="max" class="form-control" min="0" required placeholder="Max">
-        
-        <button type="submit" name="submit" class="btn btn-success">
-            Search
-        </button>
-    </form>
-    </div>
+        </div>
     <div class="container">
         <br><br>
         <h1 class="text-center" id="popular">Most Popular</h1>
