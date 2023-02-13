@@ -40,22 +40,22 @@
                 <div class="carousel-item active">
                 <img class="d-block w-100" src="images/banner.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                <h1>Est notare quam littera gothica, quam nunc.</h1>
-				<h2>At wisi enim ad minim veniam, quis nostrud.</h2>
+                <h1>  immobiliers: trouvez l'appartement ou la maison de vos rêves</h1>
+				<h2>à vendre ou à louer</h2>
                 </div>
             </div>
                 <div class="carousel-item">
                 <img class="d-block w-100" src="images/banner1.jpg" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
-                <h1>Est notare quam littera gothica, quam nunc.</h1>
-				<h2>At wisi enim ad minim veniam, quis nostrud.</h2>
+                <h1>  immobiliers: trouvez l'appartement ou la maison de vos rêves</h1>
+				<h2>à vendre ou à louer</h2>
                 </div>
                 </div>
                 <div class="carousel-item">
                 <img class="d-block w-100" src="images/banner2.jpg" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
-                <h1>Est notare quam littera gothica, quam nunc.</h1>
-				<h2>At wisi enim ad minim veniam, quis nostrud.</h2>
+                <h1>  immobiliers: trouvez l'appartement ou la maison de vos rêves</h1>
+				<h2>à vendre ou à louer</h2>
                 </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
         <div class="card-deck">
             <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    include('search.php');
+                    require ('search.php');
                 }else {
                     $get_data = "SELECT * FROM annonce";
                     $get_data_qry = mysqli_query($conn, $get_data);

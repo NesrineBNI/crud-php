@@ -31,9 +31,12 @@
   </div>
 
 <?php
-                include 'delete-modal.php';
-                include 'edit-modal.php';
-                $num++; 
-                }
-            }
+      include 'delete-modal.php';
+      include 'edit-modal.php';
+      $num++; 
+      }
+  }else{
+    echo "<h1>aucun </h1>";
+  }
 ?>
+

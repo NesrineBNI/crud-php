@@ -32,9 +32,10 @@
         if (isset($update_qry)) {
           header("Location: index.php");
  
-        }else{
-            echo "<h1>erreur</h1>";
-        }
+      }else{
+          echo "<h1>erreur</h1>";
+      }
       
+    
       }
 ?>
